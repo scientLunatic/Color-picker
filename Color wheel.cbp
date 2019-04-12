@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Color wheel" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Color wheel" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../libs/yet_another_list" />
+				</Compiler>
+				<Linker>
+					<Add library="../../libs/yet_another_list/bin/libyet_another_list.a" />
+					<Add directory="../../libs/yet_another_list" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Color wheel" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="C:/Program Files (x86)/CodeBlocks/MinGW/bin" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../../libs/yet_another_list/" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../libs/yet_another_list/bin/libyet_another_list.a" />
+					<Add directory="../../libs/yet_another_list/" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/include" />
+		</Compiler>
+		<Linker>
+			<Add library="glut32" />
+			<Add library="opengl32" />
+			<Add library="glu32" />
+			<Add library="winmm" />
+			<Add library="gdi32" />
+			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
+		</Linker>
+		<Unit filename="color_wheel.cpp" />
+		<Unit filename="icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
